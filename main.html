@@ -11,11 +11,18 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
+          <script type="text/javascript"></script>
+    <script src="js/util.js"></script>
+    <script src="js/Page.class.js"></script>
+    <script src="js/Choix.class.js"></script>
+    <script src="js/Personnage.class.js"></script>
+
 </head>
 <body>
   <div class="center-align">
     <div id="background"class="container">
       <div class="card-panel teal lighten-2"> <i class="material-icons tiny">favorite</i> Points de vie : 100 HP <i class="material-icons tiny">thumbs_up_down</i> Popularité : 100 %</div>
+
 
       <p class="flow-text">Case de texte : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
@@ -35,5 +42,16 @@
         </div>
       </div>
     </div>
+          <script>
+
+              document.getElementById("affichage").innerHTML = "ma bite";
+
+          var currentPage = new Page(0, "test");
+
+          for(var i = 0; i<3; i++)
+          currentPage.choix.push(new Choix(i+1, "test"));
+
+
+      </script>
   </body>
   </html>
